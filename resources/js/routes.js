@@ -1,22 +1,22 @@
 
 // Panel
-import Panel	from './components/views/panel/Home';
+import Home	from './components/views/panel/Home';
 import DashBoard	from './components/views/panel/DashBoard';
-import  NotFound from './components/views/panel/NotFound';
+//import  NotFound from './components/views/panel/NotFound';
 
 export const routes = [
 	{
 		path: '/',
-		component: Panel,
+		component: Home,
 		children: [
 			{
 				path: '',
 				component: DashBoard
 			},
-			{
-				path: '*',
-				component:NotFound
-			},
+			//{
+			//	path: '*',
+			//	component:NotFound
+			//},
 		]
 	}
 
